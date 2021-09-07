@@ -10,59 +10,69 @@
         android:id="@+id/fecha_entrega_et"
         android:layout_width="192dp"
         android:layout_height="46dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginBottom="511dp"
+        android:layout_marginBottom="496dp"
         android:ems="10"
         android:hint="Fecha de entrega"
+        android:clickable="false"
+        android:focusable="false"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.018"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_libro_et" />
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toEndOf="@+id/fecha_prestamo_et"
+        app:layout_constraintTop_toBottomOf="@+id/autor_et"
+        app:layout_constraintVertical_bias="0.974" />
 
     <EditText
         android:id="@+id/numero_et"
         android:layout_width="192dp"
         android:layout_height="46dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginBottom="511dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="668dp"
         android:ems="10"
         android:hint="Número de celular"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.926"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fecha_prestamo_et" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="192dp"
         android:layout_height="46dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="31dp"
         android:ems="10"
         android:hint="Nombre"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/nombre_libro_et"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/numero_cedula"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Número de cedula"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
 
     <EditText
         android:id="@+id/autor_et"
         android:layout_width="192dp"
         android:layout_height="46dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="104dp"
         android:ems="10"
         android:hint="Autor"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/fecha_prestamo_et"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintHorizontal_bias="0.981"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,31 +80,30 @@
         android:id="@+id/nombre_libro_et"
         android:layout_width="192dp"
         android:layout_height="46dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginBottom="26dp"
         android:ems="10"
         android:hint="Nombre del libro"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/fecha_entrega_et"
+        app:layout_constraintBottom_toTopOf="@+id/fecha_prestamo_et"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.863" />
 
     <EditText
         android:id="@+id/fecha_prestamo_et"
         android:layout_width="192dp"
         android:layout_height="46dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginTop="192dp"
+        android:clickable="false"
         android:ems="10"
+        android:focusable="false"
         android:hint="Fecha de prestamo"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/numero_et"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintHorizontal_bias="0.018"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/autor_et" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <Button
         android:id="@+id/guardar"
@@ -106,9 +115,9 @@
         android:text="Guardar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintHorizontal_bias="0.917"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numero_et"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.341" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

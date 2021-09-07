@@ -13,6 +13,10 @@ class NuevoPrestamoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nuevo_prestamo)
 
+
+        fecha_prestamo_et.setOnClickListener{showDatePickerDialog()}
+        fecha_entrega_et.setOnClickListener{showDatePickerDialogtwo()}
+
         var idBook: Int? = null
 
         if (intent.hasExtra("book")) {
@@ -38,6 +42,8 @@ class NuevoPrestamoActivity : AppCompatActivity() {
             val fecha_entrega = fecha_entrega_et.text.toString()
             val fecha_prestamo = fecha_prestamo_et.text.toString()
             val numero = numero_et.text.toString()
+           // val cedula = numero_cedula.text.toString().toInt()
+
 
             val book = Book(nombre, autor, nombre_libro, fecha_entrega, fecha_prestamo, numero)
 
@@ -57,5 +63,26 @@ class NuevoPrestamoActivity : AppCompatActivity() {
                     }
                 }
             }
+
         }
+    private fun showDatePickerDialog() {
+        val datePicker =
+            DatePickerFragment { day, month, year -> onDateSelecter(day, month, year) }
+        datePicker.show(supportFragmentManager, "datePicker")
+        }
+
+    private fun onDateSelecter(day: Int, month: Int, year: Int) {
+        fecha_prestamo_et.setText("$day/ $month/ $year")
     }
+    private fun showDatePickerDialogtwo() {
+        val datePicker =
+            DatePickerFragment { day, month, year -> onDateSelectertwo(day, month, year) }
+        datePicker.show(supportFragmentManager, "datePicker")
+    }
+
+    private fun onDateSelectertwo(day: Int, month: Int, year: Int) {
+        fecha_entrega_et.setText("$day/ $month/ $year")
+    }
+
+
+}
