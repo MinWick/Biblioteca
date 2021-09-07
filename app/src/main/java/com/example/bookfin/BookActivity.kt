@@ -8,6 +8,7 @@ import android.view.MenuItem
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_book.*
+import kotlinx.android.synthetic.main.activity_nuevo_prestamo.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -39,6 +40,7 @@ class BookActivity : AppCompatActivity() {
             prestamo.text = book.fecha_prestamo
             entrega.text = book.fecha_entrega
             numero_prestamista.text = book.numero_telefono
+            cedula.text = book.numero_cedula
         })
     }
 

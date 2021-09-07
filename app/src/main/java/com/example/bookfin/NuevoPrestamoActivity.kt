@@ -28,6 +28,8 @@ class NuevoPrestamoActivity : AppCompatActivity() {
             fecha_entrega_et.setText(book.fecha_entrega)
             fecha_prestamo_et.setText(book.fecha_prestamo)
             numero_et.setText(book.numero_telefono)
+            numero_cedula.setText(book.numero_cedula)
+
             idBook = book.idBook
 
         }
@@ -42,10 +44,10 @@ class NuevoPrestamoActivity : AppCompatActivity() {
             val fecha_entrega = fecha_entrega_et.text.toString()
             val fecha_prestamo = fecha_prestamo_et.text.toString()
             val numero = numero_et.text.toString()
-           // val cedula = numero_cedula.text.toString().toInt()
+            val cedula = numero_cedula.text.toString()
 
 
-            val book = Book(nombre, autor, nombre_libro, fecha_entrega, fecha_prestamo, numero)
+            val book = Book(nombre, autor, nombre_libro, fecha_entrega, fecha_prestamo, numero, cedula)
 
                 if (idBook != null) {
                     CoroutineScope(Dispatchers.IO).launch {

@@ -15,7 +15,7 @@ class Book (val nombre_pretamista:String,
             val fecha_prestamo:String,
             val fecha_entrega:String,
             val numero_telefono:String,
-            //val numero_cedula:Int,
+            val numero_cedula:String,
 
             @PrimaryKey(autoGenerate = true)
             var idBook: Int = 0
