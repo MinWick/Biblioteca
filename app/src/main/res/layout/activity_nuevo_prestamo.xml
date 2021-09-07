@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NuevoPrestamoActivity">
+
+    <EditText
+        android:id="@+id/fecha_entrega_et"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="511dp"
+        android:ems="10"
+        android:hint="Fecha de entrega"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_libro_et" />
+
+    <EditText
+        android:id="@+id/numero_et"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="511dp"
+        android:ems="10"
+        android:hint="Número de celular"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fecha_prestamo_et" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/nombre_libro_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/autor_et"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="Autor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fecha_prestamo_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre_libro_et"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Nombre del libro"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fecha_entrega_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/fecha_prestamo_et"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Fecha de prestamo"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/numero_et"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autor_et" />
+
+    <Button
+        android:id="@+id/guardar"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:backgroundTint="#494ECC"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero_et"
+        app:layout_constraintVertical_bias="0.515" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
