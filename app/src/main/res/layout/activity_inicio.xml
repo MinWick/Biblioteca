@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".inicioActivity">
 
+    <Button
+        android:id="@+id/inicio_btn"
+        android:layout_width="116dp"
+        android:layout_height="73dp"
+        android:backgroundTint="#4967A5"
+        android:text="Inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:text="Bienvenido a la aplicacion de registro prestamo de libros, de click en Inicio para agregar un prestamo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/inicio_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

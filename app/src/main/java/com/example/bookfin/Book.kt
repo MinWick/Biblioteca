@@ -9,11 +9,13 @@ import java.io.Serializable
 
 
 class Book (val nombre_pretamista:String,
+            val numero_cedula:Int,
             val nombre_libro:String,
             val autor:String,
             val fecha_prestamo:String,
             val fecha_entrega:String,
             val numero_telefono:String,
+
             @PrimaryKey(autoGenerate = true)
             var idBook: Int = 0
             ) : Serializable

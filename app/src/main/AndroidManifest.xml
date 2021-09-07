@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BookFin">
-        <activity android:name=".inicioActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".NuevoPrestamoActivity" />
         <activity android:name=".BookActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".inicioActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
