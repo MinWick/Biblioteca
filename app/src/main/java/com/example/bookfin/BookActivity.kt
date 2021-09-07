@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import kotlinx.android.synthetic.main.activity_book.*
@@ -59,6 +60,8 @@ class BookActivity : AppCompatActivity() {
                 //intent.PutExtra("book", book)
                 intent.putExtra("book", book)
                 startActivity(intent)
+
+              //  Toast.makeText(this, "Campo editado correcatamente", Toast.LENGTH_SHORT).show()
             }
             R.id.delete ->{
            // bookLiveData.removeObserver(this)
@@ -68,6 +71,7 @@ class BookActivity : AppCompatActivity() {
                     database.books().delete(book)
                     this@BookActivity.finish()
                 }
+                Toast.makeText(this, "Campo Eliminado correcatamente", Toast.LENGTH_SHORT).show()
             }
         }
 

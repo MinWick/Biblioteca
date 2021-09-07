@@ -3,6 +3,7 @@ package com.example.bookfin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_nuevo_prestamo.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -57,6 +58,7 @@ class NuevoPrestamoActivity : AppCompatActivity() {
 
                         this@NuevoPrestamoActivity.finish()
                     }
+                    Toast.makeText(this, "Campo editado correcatamente", Toast.LENGTH_SHORT).show()
                 } else {
                     CoroutineScope(Dispatchers.IO).launch {
                         database.books().insertAll(book)
@@ -64,6 +66,7 @@ class NuevoPrestamoActivity : AppCompatActivity() {
                         this@NuevoPrestamoActivity.finish()
                     }
                 }
+                Toast.makeText(this, "Campo guardado correcatamente", Toast.LENGTH_SHORT).show()
             }
 
         }
